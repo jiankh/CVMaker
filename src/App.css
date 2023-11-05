@@ -1,0 +1,70 @@
+* {
+    margin:0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#root {
+    display:flex;
+    gap: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+
+
+.editor-sidebar, .resume-container {
+    flex:1;
+    padding: 25px 50px;
+}
+
+.editor-sidebar {
+    max-width: 40vw;
+    margin-left:5%;
+}
+
+/* HEADER */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.header> h3 {
+    padding: 10px
+}
+
+.download-btn {
+    height: 30px;
+    align-self: center;
+    background-color:  rgb(240, 240, 240);
+    border-radius: 10px;
+    font-size: 1.01rem;
+    cursor: pointer;
+}
+.download-btn:hover {
+    background-color: white;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+a:hover {
+    color:blue;
+}
+
+
+@media (max-width:1250px) {
+    #root {
+        flex-direction: column-reverse;
+    }
+    .editor-sidebar {
+        max-width: 100%;
+        margin: 0 10%;
+    }
+    .resume {
+        margin: auto;
+    }
+}

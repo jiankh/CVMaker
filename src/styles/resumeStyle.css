@@ -1,0 +1,91 @@
+.resume {
+    max-width: 22cm;
+    height: 28cm;
+    background-color: white;
+    padding: 20px 50px;
+    box-shadow: 10px 10px 10px rgb(187, 187, 187);
+}
+
+.title {
+    padding: 8px 0;
+}
+
+/* PERSONAL INFO */
+.personal-contact-info {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.name-container {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-bottom: 5px;
+}
+
+/* EDUCATION */
+
+.education-container {
+    padding:10px 0;
+}
+.education-info {
+    display: grid;
+    grid-template-areas: 
+        "school-name school-location"
+        "degree graduation-date"
+    ;
+    gap: 5px;
+    padding: 5px 0;
+}
+
+.graduation-date, .school-location {
+    text-align: end;
+}
+
+.school-name, .school-location {
+    font-weight: 800;
+}
+
+.degree, .graduation-date {
+    font-style: italic;
+}
+
+/* SKILLS */
+
+.skills-resume, .interests-resume {
+    padding: 3px 0;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+/* EXPERIENCES */
+.experience-entry {
+    padding: 10px 0;
+    display: grid;
+    grid-template-areas: 
+        "company-name company-location"
+        "position-title start-end-date"
+        "description-job description-job"
+    ;
+    gap:5px;
+}
+
+.company-location, .start-end-date {
+    text-align: end;
+}
+
+.description-job {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.company-name, .company-location {
+    font-weight: 800;
+    font-size: 1.15rem;
+}
+
+.position-title, .start-end-date {
+    font-style: italic;
+}

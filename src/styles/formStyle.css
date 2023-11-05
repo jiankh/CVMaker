@@ -1,0 +1,114 @@
+.category-title, .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-title, .entry-title {
+    background-color: white;
+    padding:10px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+
+
+.minimize-btn {
+    padding: 5px;
+    background-color: transparent;
+    border:none;
+}
+
+.entry {
+    padding: 8px;
+}
+
+.form-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 8px 10px;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 1.1rem;
+}
+
+.input-wrapper {
+    padding:10px;
+}
+
+label > div {
+    padding: 5px 4px;
+}
+
+
+.input-wrapper> input {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.input-wrapper> textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    resize: none;
+}
+
+/* PERSONAL INFO */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* EXPERIENCE */
+.entry, .entry-title {
+    background-color: white;
+    margin-right: 10%;
+    border-radius: 10px;
+}
+
+.entry-title>h3 { 
+    padding: 0 20px;
+}
+.entry-title>button {
+    padding: 5px 15px;
+}
+.delete-entry-btn {
+    margin:0 10px 10px;
+    align-self: end;
+    background-color: rgb(182, 46, 46);
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+    padding: 5px 15px;
+}
+.delete-entry-btn:hover {
+    background-color: red;
+}
+
+.entry-form-container {
+    flex-direction: column;
+}
+
+.new-exp-btn {
+    align-self: center;
+    margin-right: 10%;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.new-exp-btn:hover {
+    background-color: white;
+}
+
+.start-end-date-form {
+    display: flex;
+    justify-content: space-between;
+}
