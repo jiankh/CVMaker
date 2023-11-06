@@ -77,7 +77,8 @@ function ExperienceEntry({experience, handleExperienceChange, onDelete}) {
                     placeholder="Enter Description"
                     type="textarea"
                     id="description-job"
-                    value={experience.descriptionJob || ""}
+                    value={experience.descriptionJob || 
+                        "•\n\n•\n\n•\n\n"}
                     onChange={(e) => handleExperienceChange("descriptionJob",e.target.value)}
                 />
 

@@ -27,13 +27,53 @@ function App() {
     const [skills, setSkills] = useState()
     const [interests, setInterests] = useState()
     
+    ////Download Section
+
+    const handleDownload = () => {
+        const resumeContent = document.querySelector('.resume')
+        resumeContent.style.boxShadow = "none"
+        html2pdf(resumeContent)
+        setTimeout(() => {
+            resumeContent.style.boxShadow = "10px 10px 10px rgb(187, 187, 187)"
+        }, 1000            
+        )
+        
+    }
+
+
+    // const handleDownload = () => {
+    //     const resumeContent = document.querySelector('.resume')
+
+    //     const pdfConfig = {
+    //         margin: 10,
+    //         filename: 'resume.pdf',
+    //         image: { type: 'jpeg', quality: 0.98 },
+    //         html2canvas: { scale: 2 },
+    //         jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
+    //     }
+
+    //     html2pdf().from(resumeContent).set(pdfConfig).outputPdf(pdf => {
+    //         const blob = new Blob([pdf], { type: 'application/pdf' });
+    //         const url = URL.createObjectURL(blob);
+      
+    //         // Create a link for the user to download the file
+    //         const link = document.createElement('a');
+    //         link.href = url;
+    //         link.download = pdfConfig.filename;
+    //         link.click();
+    //         URL.revokeObjectURL(url);
+    //       })
+
+    // }
 
 
   return (
     <>
         <div className='editor-sidebar'>
 
-            <Header />
+            <Header
+                handleDownload={handleDownload}
+            />
 
             <PersonalInformation 
                 handleName={(e) => handleInputChange(e,setFullName)}

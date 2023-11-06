@@ -18,7 +18,7 @@ function SkillsForm({handleInterests, handleSkills}) {
             <div className="form-container" style={{ display: isMinimized ? 'none' : 'flex' }}>
                 <InputField
                     label="Skills"
-                    placeholder="Enter SKills"
+                    placeholder="Enter Skills"
                     type="textarea"
                     id="skills"
                     onChange={handleSkills}

@@ -10,7 +10,9 @@
     background-color: rgb(240, 240, 240);
 }
 
-
+input {
+    font-size: 1.05rem;
+}
 
 .editor-sidebar, .resume-container {
     flex:1;
